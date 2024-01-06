@@ -29,9 +29,7 @@ scissors = '''
 
 game_choice = [rock, paper, scissors]
 
-# A function that
-
-
+# The game function
 def rock_paper_scissors():
     # Ask user for input
     user_input = int(input(
@@ -47,7 +45,7 @@ def rock_paper_scissors():
     while user_input not in range(0, 3):
         rock_paper_scissors()
 
-    # compare the user's and the computer's choice to determine the winner (or a draw)if usercompare the user's and the computer's choice to determine the winner (or a draw)
+    # compare the user's and the computer's choice to determine the winner (or a draw)
     if user_input == 0 and computer_input == 2:
         print("You win")
     elif computer_input == 0 and user_input == 2:
@@ -58,6 +56,5 @@ def rock_paper_scissors():
         print("You lose")
     else:
         print("Draw")
-
 
 rock_paper_scissors()

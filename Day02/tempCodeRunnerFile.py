@@ -1,3 +1,12 @@
+import random
 
+# Ask user for the names of people
+names = input("How many people are having the meal? ").split(", ")
 
-Thus everyone's share of the total bill is $30.00 plus a $3.60 tip.
+# List to store names of persons, after looping through each name
+list_names = []
+for _ in names:
+    list_names.extend(names)
+
+# Outputs Person to pay the bill
+print(random.choice(list_names))
